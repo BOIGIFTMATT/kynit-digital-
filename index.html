@@ -3,54 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KYNIT DIGITAL - We Build Websites That Make You Money</title>
+    <title>KYNIT DIGITAL</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; background: #0a0a0a; color: #fff; line-height: 1.6; }
-        
-        /* HEADER WITH YOUR IMAGE */
+        * { margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; background: #0a0a0a; color: #fff; }
         header {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('IMG_5159.jpeg') no-repeat center/cover;
+            background: #0a0a0a;
             padding: 160px 20px;
             text-align: center;
             border-bottom: 4px solid #FFD700;
         }
-        header h1 {
-            font-size: 3.5rem;
-            color: #FFD700;
-            margin-bottom: 15px;
-            font-weight: 900;
-            text-shadow: 2px 2px 4px #000;
-        }
-        header p {
-            font-size: 1.3rem;
-            margin-bottom: 30px;
-            color: #fff;
-            text-shadow: 1px 1px 3px #000;
-        }
+        header h1 { font-size: 3rem; color: #FFD700; margin-bottom: 15px; }
+        header p { font-size: 1.2rem; margin-bottom: 30px; }
         .btn {
-            display: inline-block;
-            padding: 18px 35px;
-            background: #FFD700;
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 10px;
-            font-size: 1.1rem;
+            display: inline-block; padding: 18px 35px; background: #FFD700;
+            color: #000; text-decoration: none; font-weight: bold; border-radius: 10px;
         }
-        
-        /* SECTIONS */
         section { padding: 80px 20px; max-width: 1100px; margin: auto; }
         h2 { color: #FFD700; text-align: center; margin-bottom: 50px; font-size: 2.5rem; }
-        
-        /* SERVICES */
         .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
         .card { background: #1a1a1a; padding: 30px; border-radius: 15px; border: 2px solid #FFD700; text-align: center; }
-        .card h3 { color: #FFD700; margin-bottom: 15px; font-size: 1.5rem; }
-        .price { font-size: 1.8rem; color: #FFD700; font-weight: bold; margin-top: 15px; }
-        
-        /* PORTFOLIO */
-        .portfolio { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-        .portfolio-item { background: #1a1a1a; padding: 20px; border-radius: 10px; border: 1px solid #333; }
-        
-       
+        @media(max-width: 768px) { .services { grid-template-columns: 1fr; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KYNIT DIGITAL</h1>
+        <p>We Build Digital Websites That Make You Money</p>
+        <a href="https://wa.me/234" class="btn">Get Your Website Now</a>
+    </header>
+    <section>
+        <h2>OUR SERVICES</h2>
+        <div class="services">
+            <div class="card"><h3>Website Design</h3><p>From ₦150,000</p></div>
+            <div class="card"><h3>Branding</h3><p>From ₦80,000</p></div>
+            <div class="card"><h3>Digital Growth</h3><p>From ₦100,000/mo</p></div>
+        </div>
+    </section>
+</body>
+</html>
