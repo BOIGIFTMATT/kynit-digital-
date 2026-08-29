@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KYNIT DIGITAL - Website Design & Branding</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
         body { font-family: 'Segoe UI', sans-serif; background: #0a0a0a; color: #fff; }
         
+        /* HEADER WITH ANIMATION */
         header {
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('IMG_4999.jpeg') no-repeat center/cover;
             color: white;
             text-align: center;
-            padding: 160px 20px;
+            padding: 180px 20px;
             border-bottom: 4px solid #FFD700;
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         header h1 {
             font-size: 3.5rem;
@@ -21,11 +27,15 @@
             text-shadow: 0 0 30px #FFD700;
             letter-spacing: 4px;
             margin-bottom: 15px;
+            animation: glow 2s ease-in-out infinite alternate;
         }
-        header p { 
-            font-size: 1.3rem; 
-            margin-bottom: 30px;
+        @keyframes glow {
+            from { text-shadow: 0 0 20px #FFD700; }
+            to { text-shadow: 0 0 40px #FFD700, 0 0 60px #FFD700; }
         }
+        header p { font-size: 1.3rem; margin-bottom: 30px; }
+        
+        /* GLOWING BUTTON */
         .btn {
             display: inline-block;
             padding: 18px 40px;
@@ -34,23 +44,63 @@
             text-decoration: none;
             font-weight: bold;
             border-radius: 10px;
-            box-shadow: 0 0 25px #FFD700;
             font-size: 1.1rem;
+            animation: buttonGlow 1.5s ease-in-out infinite alternate;
+            transition: transform 0.3s;
         }
-        section { padding: 80px 20px; text-align: center; }
-        h2 { color: #FFD700; font-size: 2rem; }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>KYNIT DIGITAL</h1>
-        <p>We Build Digital Websites That Make You Money</p>
-        <a href="https://wa.me/234" class="btn">Get Your Website Now</a>
-    </header>
-    
-    <section>
-        <h2>Website Design | Branding | Digital Growth</h2>
-        <p style="margin-top: 20px;">Lagos' #1 Digital Agency for Business Owners</p>
-    </section>
-</body>
-</html>
+        @keyframes buttonGlow {
+            from { box-shadow: 0 0 20px #FFD700; }
+            to { box-shadow: 0 0 40px #FFD700, 0 0 60px #FFD700; }
+        }
+        .btn:hover { transform: scale(1.05); }
+        
+        /* SECTIONS */
+        section { padding: 80px 20px; max-width: 1200px; margin: auto; }
+        h2 { color: #FFD700; font-size: 2.2rem; text-align: center; margin-bottom: 50px; }
+        
+        /* SERVICES GRID */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #FFD700;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .service-card:hover { transform: translateY(-10px); box-shadow: 0 0 30px #FFD700; }
+        .service-card h3 { color: #FFD700; margin-bottom: 15px; }
+        .price { font-size: 1.5rem; font-weight: bold; color: #FFD700; margin-top: 10px; }
+        
+        /* PORTFOLIO */
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .portfolio-item {
+            background: #1a1a1a;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid #333;
+            transition: 0.3s;
+        }
+        .portfolio-item:hover { border-color: #FFD700; transform: scale(1.03); }
+        .portfolio-item img { width: 100%; height: 200px; object-fit: cover; }
+        .portfolio-item div { padding: 20px; }
+        
+        /* TESTIMONIALS */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .testimonial {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 4px solid #
