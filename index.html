@@ -36,4 +36,86 @@
         .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
         .card { background: #1a1a1a; padding: 35px 25px; border-radius: 15px; border: 2px solid #FFD700; text-align: center; transition: 0.3s; }
         .card:hover { transform: translateY(-10px); background: #222; }
-        .card h3 { color: #FFD700
+        .card h3 { color: #FFD700; margin-bottom: 15px; font-size: 1.5rem; }
+        .card p { margin-bottom: 20px; font-size: 1rem; color: #ccc; }
+        .price { color: #FFD700; font-weight: bold; font-size: 1.2rem; }
+
+        /* FOOTER */
+        footer { background: #000; text-align: center; padding: 30px; border-top: 2px solid #FFD700; margin-top: 50px; }
+        footer p { color: #888; }
+
+        /* MOBILE */
+        @media(max-width: 900px) { 
+            .services { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media(max-width: 600px) { 
+            .services { grid-template-columns: 1fr; } 
+            header h1 { font-size: 2.2rem; } 
+            nav a { margin: 0 8px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+<!-- NAV MENU -->
+<nav>
+<a href="index.html">HOME</a>
+<a href="about.html">ABOUT</a>
+<a href="portfolio.html">PORTFOLIO</a>
+<a href="contact.html">CONTACT</a>
+</nav>
+
+<!-- HERO SECTION -->
+<header>
+    <h1>KYNIT DIGITAL</h1>
+    <p>We Build Digital Websites, Brands & AI Content That Make You Money</p>
+    <a href="contact.html" class="btn">Get Your Website Now</a>
+</header>
+
+<!-- SERVICES SECTION -->
+<section>
+    <h2>OUR SERVICES</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Website Design</h3>
+            <p>Fast, mobile-friendly websites that convert visitors to customers</p>
+            <div class="price">From ₦150,000</div>
+        </div>
+        
+        <div class="card">
+            <h3>Branding & Logo</h3>
+            <p>Complete brand identity that makes you look premium</p>
+            <div class="price">From ₦80,000</div>
+        </div>
+        
+        <div class="card">
+            <h3>Digital Growth</h3>
+            <p>Social media management + Facebook/Instagram ads</p>
+            <div class="price">From ₦100,000/mo</div>
+        </div>
+
+        <div class="card">
+            <h3>AI Content Generator</h3>
+            <p>AI-powered scripts, captions, and content for TikTok/Reels/YouTube</p>
+            <div class="price">From ₦50,000/mo</div>
+        </div>
+
+        <div class="card">
+            <h3>Script Writer</h3>
+            <p>Hook-worthy video scripts + sales copy that sells for you</p>
+            <div class="price">From ₦30,000</div>
+        </div>
+
+        <div class="card">
+            <h3>SEO & Google</h3>
+            <p>Get found on Google. Rank #1 for your business in Ibadan</p>
+            <div class="price">From ₦70,000</div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 KYNIT DIGITAL | Based in Ibadan, Nigeria | kynit-digital.vercel.app</p>
+</footer>
+</body>
+</html>
