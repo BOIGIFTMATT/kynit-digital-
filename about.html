@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>About KYNIT DIGITAL</title>
+<title>About KYNIT DIGITAL | Web Design Agency in Lagos</title>
 <style>
 body{background:#0a0a0a;color:#fff;font-family:Arial;margin:0;}
-nav{background:#000; padding:20px; text-align:center; border-bottom:2px solid #FFD700;}
+nav{background:#000; padding:20px; text-align:center; border-bottom:2px solid #FFD700; position:sticky; top:0;}
 nav a{color:#FFD700; text-decoration:none; margin:0 15px; font-weight:bold;}
-h1{color:#FFD700;font-size:3rem;text-align:center;padding-top:100px;}
+.container{max-width:900px; margin:60px auto; padding:0 20px;}
+h1{color:#FFD700;font-size:2.8rem;text-align:center;margin-bottom:10px;}
+.subtitle{text-align:center; color:#ccc; margin-bottom:50px; font-size:1.1rem;}
+.section{margin-bottom:50px;}
+.section h2{color:#FFD700; font-size:1.8rem; margin-bottom:15px; border-left:4px solid #FFD700; padding-left:15px;}
+.section p{font-size:1.1rem; line-height:1.8; color:#ddd; margin-bottom:15px;}
+.highlight{color:#FFD700; font-weight:bold;}
+.values{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:20px;}
+.value-box{background:#1a1a1a; padding:25px; border-radius:10px; border:1px solid #333; text-align:center;}
+.value-box h3{color:#FFD700; margin-bottom:10px;}
+.btn{display:inline-block; padding:15px 30px; background:#FFD700; color:#000; text-decoration:none; font-weight:bold; border-radius:8px; margin-top:20px;}
+@media(max-width:700px){.values{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -16,7 +27,13 @@ h1{color:#FFD700;font-size:3rem;text-align:center;padding-top:100px;}
 <a href="portfolio.html">PORTFOLIO</a>
 <a href="contact.html">CONTACT</a>
 </nav>
-<h1>ABOUT KYNIT DIGITAL</h1>
-<p style="text-align:center; padding:20px; font-size:1.2rem;">We build websites that make businesses money. Based in Lagos, Nigeria.</p>
-</body>
-</html>
+
+<div class="container">
+    <h1>ABOUT KYNIT DIGITAL</h1>
+    <p class="subtitle">We Build Websites, Brands & AI Content That Make You Money</p>
+
+    <div class="section">
+        <h2>WHO WE ARE</h2>
+        <p>KYNIT DIGITAL is a premium <span class="highlight">web design and digital marketing agency based in Lagos, Nigeria</span>.</p>
+        <p>We help entrepreneurs, startups, and businesses across Nigeria look professional online and get more customers with websites that actually convert.</p>
+        <p>We don’t just "build websites". We build
