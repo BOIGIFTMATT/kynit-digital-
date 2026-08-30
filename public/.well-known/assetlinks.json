@@ -1,8 +1,0 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.kynit.digital",
-    "sha256_cert_fingerprints": [D2:7A:4B:9C:1E:F3:8A:5D:6B:0C:4E:2F:9A:7D:3C:1B:5E:8F:2A:6C:9D:0B:3E:7A:4C:8F:1D:5B:2E:6A:9C:3F"]
-  }
-}]
